@@ -27,10 +27,9 @@ class MyArray {
   }
 
   shift(item) {
-    this.data[this.length] = null;
+    this.push("");
     this.switchPositionsReverse();
     this.data[0] = item;
-    this.length++;
     return item;
   }
 
